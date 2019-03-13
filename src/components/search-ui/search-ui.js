@@ -19,14 +19,11 @@ export default function SearchUi({ result, search, isSearching }) {
 
   const onSubmit = (event) => {
     event.preventDefault();
-		if (!query) {
-			return;
+		if (query) {
+			search({ q: query });
 		}
-    const params = {
-      q: query
-    };
-    search(params);
   };
+
   return (
     <div>
       <form onSubmit={onSubmit}>
