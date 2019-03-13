@@ -26,7 +26,8 @@ The `ChildComponent` will be passed in 3 props:
 ## Renaming Props
 
 Should you need to change the names of any of these props, you simply provide a
-function child, and rename the props as required in the body:
+function child, and rename the props as required in the body, making sure to
+use the JSX style for returning the render of the component:
 
 ```
 <GithubSearch>
